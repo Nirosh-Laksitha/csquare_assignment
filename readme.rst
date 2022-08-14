@@ -47,7 +47,7 @@ CONFIG ENVIRONMENT
 - Set Database Config
 	o goto application/config/database.php
 	o inside it change to yours
-			'hostname' => 'localhost',
+		'hostname' => 'localhost',
         	'username' => 'root',
         	'password' => '',
         	'database' => 'csquare_assignment',
