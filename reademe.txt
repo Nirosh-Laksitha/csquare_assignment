@@ -1,0 +1,14 @@
+*config environment*
+
+- change base url
+	goto application/config/config.php
+	inside it change to yours
+			$config['base_url'] = 'http://localhost:3000/';
+
+- set database config
+	goto application/config/database.php
+	inside it change to yours
+			'hostname' => 'localhost',
+        	'username' => 'root',
+        	'password' => '',
+        	'database' => 'csquare_assignment',
