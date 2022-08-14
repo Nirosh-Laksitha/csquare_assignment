@@ -1,71 +1,53 @@
-###################
-What is CodeIgniter
-###################
+########################
+CSQUARE ASSIGNMENT TASKS
+########################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+1. Task 1 (Customer)
+	a. Store/Register Customer data with view list (Form validation is must)
+	b. Below fields should be included in the form
+		o Title (Mr/Mrs/Miss/Dr)
+		o First name
+		o Last name
+		o Contact number
+		o District
+2. Task 2 (Item)
+	a. Store/Register Item details with view list (Form validation is must)
+	b. Below fields should be included in the form
+		o Item code
+		o Item name
+		o Item category (must be able to select)
+		o Item sub category (must be able to select)
+		o Quantity
+		o Unit price
+3. Task 3 (Reports)
+	a. Invoice report
+		i. Should be able to select a date range and search
+		ii. Below details should be included in the report
+			o Invoice number/ Date/ Customer/ Customer district /Item
+			count/ Invoice amount
+	b. Invoice item report
+		i. Should be able to select a date range and search
+		ii. Below details should be included in the report
+			o Invoice number/ Invoiced date/ Customer name/ Item name
+			with Item code/ Item category/ Item unit price
+	c. Item report
+		i. Below details should be included in the report
+			o Item Name (shouldn’t repeat)/ Item category/ Item sub
+			category/ Item quantity
 
-*******************
-Release Information
-*******************
+******************
+CONFIG ENVIRONMENT
+******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+- Change Base Url
+	o goto application/config/config.php
+	o inside it change to yours
+			$config['base_url'] = 'http://localhost:3000/';
 
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+- Set Database Config
+	o goto application/config/database.php
+	o inside it change to yours
+			'hostname' => 'localhost',
+        	'username' => 'root',
+        	'password' => '',
+        	'database' => 'csquare_assignment',
